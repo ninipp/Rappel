@@ -122,9 +122,9 @@ const siriusClass = ["Parfait", "Elois", "Dorin", "Tishik", "Mohamed"];
 const listOutput = document.getElementById("listOutput");
 siriusClass.forEach(student => {
     console.log(student);
-    listOutput.push(student);
+    listOutput.innerHTML += `<li>${student}</li>`;
 });
-listOutput.innerHTML = "<li>'Parfait'</li><li>'Elois'</li><li>'Dorin'</li><li>'Tishik'</li><li>'Mohamed'</li>"
+
 // Exercice 10
 // Ne touchez pas au tableau
 const icons = [
